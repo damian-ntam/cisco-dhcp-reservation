@@ -36,11 +36,3 @@ dhcp_srv_conn.send_command("clear ip dhcp bin "+reservation)
 dhcp_srv_conn.send_config_set("ip dhcp pool "+reservation+"\nhost "+reservation+"\nclient-id "+dict[reservation])
 print("\nYour DHCP reservation has been created:\n")
 print(dhcp_srv_conn.send_command("show ip dhcp bind "+reservation+" | inc "+reservation+"_"))
-
-'''	
-clear ip dhcp binding 10.1.3.85
-conf t
-ip dhcp pool 10.1.3.85
-host 10.1.3.85        
-client-id ?
-'''
