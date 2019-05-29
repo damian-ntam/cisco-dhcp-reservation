@@ -38,7 +38,7 @@ Your DHCP reservation has been created:
 
 ### Requirements
 
--Python3.x
+-Python version 3.x
 
 -Python module 'netmiko'
 
