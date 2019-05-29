@@ -28,7 +28,7 @@ IP address       Client-ID/              Lease expiration        Type
 Enter the IP of the lease to convert to reservation: 10.1.1.18
 ```
 
-The script will also alert you if the provided IP *is a CDP neighbor*. Currently this will not provide you port information past the core router/switch:
+The script will then confirm the creation of your DHCP reservation.
 
 ```
 Your DHCP reservation has been created:
