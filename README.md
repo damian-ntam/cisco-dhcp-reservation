@@ -16,7 +16,19 @@ Username: admin
 Password: ******
 ```
 
-The script will then obtain the current leases and let you select one to convert by providing the lease's IP.
+3. Select the existing DHCP pool of the target lease to be converted:
+
+```
+Current DHCP pools:
+
+Workstations
+Servers
+Access_Points
+```
+
+Note: This step of selecting the existing DHCP scope is to obtain settings (default-router, domain-name, DHCP options) that will be applied to the reservation to be created.
+
+4. Select a lease to convert from a list of current leases.
 
 ```
 IP address       Client-ID/              Lease expiration        Type
