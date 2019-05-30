@@ -28,7 +28,7 @@ Access_Points
 Select the DHCP pool for the target lease to convert (case-sensitive): Servers
 ```
 
-Note: This step of selecting the existing DHCP scope is to obtain settings (default-router, domain-name, DHCP options) that will be applied to the reservation to be created.
+Note: This step of selecting the existing DHCP pool is to obtain settings (default-router, domain-name, DHCP options) that will be applied to the reservation pool.
 
 4. Select a lease to convert from a list of current leases.
 
