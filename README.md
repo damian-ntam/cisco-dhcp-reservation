@@ -24,6 +24,8 @@ Current DHCP pools:
 Workstations
 Servers
 Access_Points
+
+Select the DHCP pool for the target lease to convert (pool options will be applied to reservation (case-sensitive):
 ```
 
 Note: This step of selecting the existing DHCP scope is to obtain settings (default-router, domain-name, DHCP options) that will be applied to the reservation to be created.
