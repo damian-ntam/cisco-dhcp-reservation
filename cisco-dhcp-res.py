@@ -1,5 +1,4 @@
 from netmiko import ConnectHandler
-import time
 import re
 import getpass
 
@@ -24,6 +23,7 @@ for line in pools.splitlines():
 	line=line.lstrip("Pool ")
 	line=line.rstrip(" :")
 	pool_names.append(line)
+print("\nCurrent DHCP pools: \n")
 for pool in pool_names:
 	print(pool)
 target_pool=input("Select the DHCP pool for the target lease to convert (pool options will be applied to reservation: ")
