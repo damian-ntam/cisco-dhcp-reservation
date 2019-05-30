@@ -26,9 +26,9 @@ for line in pools.splitlines():
 print("\nCurrent DHCP pools: \n")
 for pool in pool_names:
 	print(pool)
-target_pool=input("Select the DHCP pool for the target lease to convert (pool options will be applied to reservation: ")
+target_pool=input("\nSelect the DHCP pool for the target lease to convert (this pool's options will be applied to reservation: ")
 while target_pool not in pool_names:
-	target_pool=input("Select the DHCP pool for the target lease to convert: \n")
+	target_pool=input("Select the DHCP pool for the target lease to convert: ")
 pool_config=dhcp_srv_conn.send_command("show run | sec "+target_pool)
 pool_settings=[]
 for line in pool_config.splitlines():
